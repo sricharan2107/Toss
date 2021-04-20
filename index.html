@@ -27,13 +27,51 @@
     </script>
 </head>
 <body style="margin-top: 5rem;">
-    <div style="border: solid; border-color: black; width: 20%; height: 40%; margin: auto; padding-bottom: 5rem;">
+   <!-- <div style="border: solid; border-color: black; width: 20%; height: 40%; margin: auto; padding-bottom: 5rem;">-->
         <h1 style="text-align: center; color: blueviolet;">charan toss</h1>
     <div style="display:block ;margin-top: 5rem;text-align: center;">
         <img aling="center" src="Pics/up1.jpg" alt="noo image" width="200px" id="tom" >
         <br><br><br>
         <button class="btn" onclick="tossit()">Toss the coin</button>
+   <!-- </div>-->
     </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>charan toss</title>
+    <link rel="stylesheet" href="Css/toss.css">
+    <style>
+        p.solid {border-style: solid;}
+    </style>
+    <script>
+        function tossit(){
+            var k = Math.floor(Math.random()*100000+1);
+            console.log(k)
+            if(k&1){
+                document.getElementById('tom').src = "Pics/1.jpg";
+
+            }
+            else{
+                document.getElementById('tom').src = "Pics/2.jpg";
+            }
+            setTimeout(function(){
+            window.location.href = 'index.html';
+            }, 1500);
+        }
+    </script>
+</head>
+<body style="margin-top: 5rem;">
+   <!-- <div style="border: solid; border-color: black; width: 20%; height: 40%; margin: auto; padding-bottom: 5rem;">-->
+        <h1 style="text-align: center; color: blueviolet;">charan toss</h1>
+    <div style="display:block ;margin-top: 5rem;text-align: center;">
+        <img aling="center" src="Pics/up1.jpg" alt="noo image" width="200px" id="tom" >
+        <br><br><br>
+        <button class="btn" onclick="tossit()">Toss the coin</button>
+   <!-- </div>-->
     </div>
 </body>
 </html>
